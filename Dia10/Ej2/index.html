@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Oswald:wght@200;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">PC</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#Sobre-Mi">Sobre mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Experiencia">Experiencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Trabajos">Trabajos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Hero Section-->
+
+    <header id="Hero-Section">
+      <div class="text-white text-center">
+        <h1>YO SOY</h1>
+        <hr class="bg-white" />
+        <h1>COMPUTADOR</h1>
+      </div>
+    </header>
+
+    <!--Sobre mi-->
+
+    <section class="d-none pt-5 d-sm-block container">
+      <div>
+        <h4 class="text-center">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+          praesentium reiciendis quisquam laboriosam consequuntur? Ad eos
+          <hr class="bg-dark" />
+          <div class="row pt-3" id="Sobre-Mi">
+            <div class="col-6">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                est ad sed doloribus officiis, ducimus aspernatur vitae
+                architecto delectus id impedit. Dolorum dolorem dolor ullam
+                voluptatem tempore vel aperiam ducimus.
+              </p>
+            </div>
+            <div class="col-6">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis
+                quod at facere eveniet nemo inventore tempora expedita
+                reiciendis soluta perspiciatis. Omnis quos, cumque ab at alias
+                numquam fugit a eos.
+              </p>
+            </div>
+          </div>
+        </h4>
+      </div>
+    </section>
+
+    <!--Experiencia-->
+    <section id="Experiencia" class="container text-center py-5">
+      <div>
+        <h1 class="font-weight-bold">MI EXPERIENCIA</h1>
+        <hr class="bg-dark" />
+      </div>
+      <div class="row pt-3">
+        <article class="col-12 col-sm-6">
+          <i
+            class="fab fa-java fa-10x"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="Some tooltip text!"
+          ></i>
+          <h4 class="font-weight-bold mt-3">Java</h4>
+          <h4>2020-2021</h4>
+        </article>
+        <article class="col-12 col-sm-6">
+          <i
+            class="fab fa-js-square fa-10x"
+            data-toggle="popover"
+            data-placement="top"
+            data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+          ></i>
+          <h4 class="font-weight-bold mt-3">JavaScript</h4>
+          <h4>2021-Presente</h4>
+        </article>
+      </div>
+    </section>
+
+    <!--Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Trabajos -->
+    <section class="py-5" id="Trabajos">
+      <div>
+        <h1 class="text-center mt-2 text-light">MIS ULTIMOS TRABAJOS</h1>
+        <hr class="bg-white" />
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-4 my-2">
+            <div class="card border-0">
+              <img src="assets/img/post-1.jpg" data-toggle="modal" data-target="#exampleModal" alt="" class="img-top" />
+              <div class="card-body">
+                <h4 class="mb-3">Meet&Coffee</h4>
+                <p class="card-text font-weight-lighter">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptas, commodi iusto laborum placeat illum amet pariatur
+                  nostrum sint repellendus incidunt ipsam, vitae suscipit,
+                  corrupti ut doloribus adipisci voluptatem eveniet dolorem?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4 my-2">
+            <div class="card border-0">
+              <img src="assets/img/post-1.jpg" alt="" class="img-top" />
+              <div class="card-body">
+                <h4 class="mb-3">Meet&Coffee</h4>
+                <p class="card-text font-weight-lighter">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptas, commodi iusto laborum placeat illum amet pariatur
+                  nostrum sint repellendus incidunt ipsam, vitae suscipit,
+                  corrupti ut doloribus adipisci voluptatem eveniet dolorem?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4 my-2">
+            <div class="card border-0">
+              <img src="assets/img/post-1.jpg" alt="" class="img-top" />
+              <div class="card-body">
+                <h4 class="mb-3">Meet&Coffee</h4>
+                <p class="card-text font-weight-lighter">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptas, commodi iusto laborum placeat illum amet pariatur
+                  nostrum sint repellendus incidunt ipsam, vitae suscipit,
+                  corrupti ut doloribus adipisci voluptatem eveniet dolorem?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4 my-2">
+            <div class="card border-0">
+              <img src="assets/img/post-1.jpg" alt="" class="img-top" />
+              <div class="card-body">
+                <h4 class="mb-3">Meet&Coffee</h4>
+                <p class="card-text font-weight-lighter">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptas, commodi iusto laborum placeat illum amet pariatur
+                  nostrum sint repellendus incidunt ipsam, vitae suscipit,
+                  corrupti ut doloribus adipisci voluptatem eveniet dolorem?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4 my-2">
+            <div class="card border-0">
+              <img src="assets/img/post-1.jpg" alt="" class="img-top" />
+              <div class="card-body">
+                <h4 class="mb-3">Meet&Coffee</h4>
+                <p class="card-text font-weight-lighter">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptas, commodi iusto laborum placeat illum amet pariatur
+                  nostrum sint repellendus incidunt ipsam, vitae suscipit,
+                  corrupti ut doloribus adipisci voluptatem eveniet dolorem?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4 my-2">
+            <div class="card border-0">
+              <img src="assets/img/post-1.jpg" alt="" class="img-top" />
+              <div class="card-body">
+                <h4 class="mb-3">Meet&Coffee</h4>
+                <p class="card-text font-weight-lighter">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptas, commodi iusto laborum placeat illum amet pariatur
+                  nostrum sint repellendus incidunt ipsam, vitae suscipit,
+                  corrupti ut doloribus adipisci voluptatem eveniet dolorem?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Contacto-->
+
+    <section id="Contacto" class="container text-center py-5">
+      <div>
+        <h1 class="font-weight-bold">CONTACTO</h1>
+        <hr class="bg-dark" />
+      </div>
+      <div
+        class="typeform-widget"
+        data-url="https://form.typeform.com/to/biGl8B5I?typeform-medium=embed-snippet"
+        style="width: 100%; height: 500px"
+      ></div>
+      <script>
+        (function () {
+          var qs,
+            js,
+            q,
+            s,
+            d = document,
+            gi = d.getElementById,
+            ce = d.createElement,
+            gt = d.getElementsByTagName,
+            id = "typef_orm",
+            b = "https://embed.typeform.com/";
+          if (!gi.call(d, id)) {
+            js = ce.call(d, "script");
+            js.id = id;
+            js.src = b + "embed.js";
+            q = gt.call(d, "script")[0];
+            q.parentNode.insertBefore(js, q);
+          }
+        })();
+      </script>
+    </section>
+    <!--Footer-->
+    <footer id="Footer" class="text-center text-white py-5">
+      <div class="row m-auto">
+        <div class="col-12 col-sm-6">
+          <h1 class="font-weight-bold">COMPUTADOR</h1>
+        </div>
+        <div class="col12 col-sm-6 mt-4 mt-sm-0">
+          <i class="fab fa-github-alt fa-3x mx-2"></i>
+          <i class="fab fa-linkedin fa-3x mx-2"></i>
+          <i class="fab fa-github-alt fa-3x mx-2"></i>
+          <i class="fab fa-linkedin fa-3x mx-2"></i>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/js.js"></script>
+  </body>
+</html>
