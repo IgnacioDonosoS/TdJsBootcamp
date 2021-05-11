@@ -1,0 +1,109 @@
+
+body {
+    background-color: #000000;
+}
+
+.desc-section {
+    float: left;
+    width: 49%;
+    padding: 5px;
+}
+
+.footer {
+    background-color: #1e1a13;
+    color: #ffffff;
+}
+
+h1,
+h2,
+p {
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+}
+
+#top {
+    text-align: center;
+    top: 0;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 3em;
+}
+
+header {
+    align-items: center;
+    background-color: #000000;
+    color: #ffffff;
+    height: 73px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.icon-section {
+    align-items: center;
+    background-color: #1e1a13;
+    float: left;
+    width: 30%;
+    padding: 5px;
+    color: #ffffff;
+}
+
+#caracEnunciado {
+    background-color: #1e1a13;
+    text-align: center;
+    font-weight: 500;
+    font-size: 2em;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.colorGrey {
+    background-color: #1e1a13;
+}
+.subIcon {
+    font-weight: 300;
+}
+
+.column {
+    float: left;
+    width: 33%;
+    padding: 2px;
+  }
+
+  .img{
+    height: 316px;
+    width: 202px;
+  }
+.paddingLeft{
+    padding-left: 80px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+  
+}
+.paddingRight{
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.paddingCenter{
+    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+#footer{
+    text-align: center;
+    font-weight: 300;
+    font-size: 2em;
+}
+.bottom{
+    bottom: 0;
+    height: 80px;
+}
+a{
+    text-decoration: none;
+}
+

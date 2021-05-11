@@ -1,0 +1,18 @@
+.navbar-toggler-icon{
+    background-color: #ffff;
+}
+
+#bgHero{
+    background-image: url('../img/bg-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;}
+
+ .imgH{
+    height: 300px;
+ }   
+ body {
+    text-align: center;
+    color: #000f08;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+  }

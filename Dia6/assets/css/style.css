@@ -1,0 +1,18 @@
+body{font-family: 'Roboto', sans-serif;} 
+#nav{background-color: #28A745;}
+.formu{background-color: #28A745;}
+.card-title{
+    font-size: 20pt;
+}
+.card-text{
+    font-size: 16pt;
+}
+.precioM{
+    font-size: 16pt;
+}
+.precioO{
+    font-size: 20pt;
+}
+#direccion{
+    font-size: 13pt;
+}

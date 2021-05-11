@@ -1,0 +1,35 @@
+body{
+text-align center;
+color #000f08;
+margin 0;
+padding 0;
+border 0;
+}
+.oscurso{
+background #000f08;
+color #ffffff;
+}
+.oscurso a{
+color #ffffff;
+text-decoration none;
+}
+
+.sweetBrown {
+text-align left;
+background #a4452c;
+color #ffffff;
+padding 50px;
+}
+
+.hero_section {
+text-align right;
+background-image  url(httpsckcusa.commedia150178coffeeh.jpgpreset=ckcBlogImage);
+background-repeat no-repeat;
+background-size cover;
+color #ffffff;
+padding 50px 50px 250px 50px;
+}
+
+section, footer{
+margin-top 75px;
+}
