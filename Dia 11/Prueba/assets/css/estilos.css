@@ -1,0 +1,12 @@
+.bgBlack{
+    background-color: black;
+}
+.img-top{
+    height: 166px;
+}
+@media (max-width: 576px){
+    .img-top{
+      height: 200px;  
+    } 
+}
+
