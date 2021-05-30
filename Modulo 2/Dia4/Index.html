@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juego Cachipun</title>
+  </head>
+  <body>
+    <script>
+      var jugadaPc;
+      var resultado;
+      var rJugador = 0;
+      var rPc = 0;
+      var nJuegos = parseInt(prompt("¿Cuántas veces desea jugar?"));
+      for (let i = 0; i < nJuegos; i++) {
+        resultado = 5;
+        var jugada = prompt("ingrese piedra, papel o tijera");
+        if (jugada.toLocaleUpperCase == "piedra".toLocaleUpperCase) {
+          jugada = 0;
+        }
+        if (jugada.toLocaleUpperCase == "papel".toLocaleUpperCase) {
+          jugada = 1;
+        }
+        if (jugada.toLocaleUpperCase == "tijera".toLocaleUpperCase) {
+          jugada = 2;
+        }
+
+        jugadaPc = getRandomInt(3);
+
+        if (jugada == jugadaPc) {
+          alert("Empate");
+        } else {
+          resultado = compara(jugada, jugadaPc);
+        }
+        if ((resultado == 0)) {
+          alert("Ganaste esta ronda");
+          rJugador++;
+        }
+        if ((resultado == 1)) {
+          alert("Perdiste esta ronda");
+          rPc++;
+        }
+      }
+      if (rJugador == rPc) {
+        alert("Juegos finalizados con un empate");
+      }
+      if (rJugador > rPc) {
+        alert("Usted gano estos juegos");
+      }
+      if (rJugador < rPc) {
+        alert("Usted Perdio estos juegos");
+      }
+      function getRandomInt(max) {
+        return Math.floor(Math.random() * max);
+      }
+      function compara(jugada, jugadaPc) {
+        if (jugada == 0 && jugadaPc == 2) {
+          return 0;
+        }
+        if (jugada == 1 && jugadaPc == 0) {
+          return 0;
+        }
+        if (jugada == 2 && jugadaPc == 1) {
+          return 0;
+        }
+        return 1;
+      }
+    </script>
+  </body>
+</html>

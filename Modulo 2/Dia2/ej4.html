@@ -1,0 +1,8 @@
+<script>
+var dias = parseInt(prompt("ingrese la cantidad de dias a calcular"))
+var años = Math.floor(dias/365)
+var restoAño = dias % 365
+var semanas = Math.floor(restoAño/7)
+var dias = restoAño%semanas
+document.write("Son " + años + " años más " + semanas + " semanas más y " + dias + " dias." )
+</script>

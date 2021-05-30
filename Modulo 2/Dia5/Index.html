@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        // para mostrar los factoriales ordenados al final. 
+      var factoriales = [];
+        // para saber si lo ingresado esta entre los rangos, solo acepta números
+      function inRange(x, min, max) {
+        return (x - min) * (x - max) <= 0;
+      }
+      // para seguir preguntando en caso de lo que ingresen esta equivocado
+      var comprobarNumero = (datoTomado) => {
+        let numeroEntregar = parseInt(datoTomado);
+        while (!inRange(numeroEntregar, 1, 20)) {
+          numeroEntregar = prompt("Ingrese un número entre el 1 y el 20");
+        }
+        return numeroEntregar;
+      };
+      //función que hace el calculo
+      var factMul = (stringPrompt) => {
+        let cantidad = comprobarNumero(stringPrompt);
+        for (let i = 1; i <= cantidad; i++) {
+          let factorial = 1;
+          document.write(cantidad + " X " + i + " = " + cantidad * i + "<br>");
+          for (let j = 1; j <= i - 1; j++) {
+            factorial += j * factorial;
+          }
+          factoriales.push(factorial);
+        }
+        for (let i = 0; i < factoriales.length; i++) {
+          document.write(
+            "El factorial de " + (i + 1) + " es: " + factoriales[i] + ". <br>"
+          );
+        }
+      };
+      var stringPrompt = prompt("ingrese un número entre 1 y 20");
+      factMul(stringPrompt);
+    </script>
+  </body>
+</html>
