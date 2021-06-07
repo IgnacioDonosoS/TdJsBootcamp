@@ -5,6 +5,7 @@
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "TdJs"
+		"liveServer.settings.multiRootWorkspaceName": "TdJs",
+		"git.ignoreLimitWarning": true
 	}
 }
