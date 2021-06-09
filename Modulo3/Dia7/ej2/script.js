@@ -6,7 +6,6 @@ class Pelicula {
     return this._name;
   }
 }
-asdsafsadsadsa
 
 class Largometraje extends Pelicula {
   constructor(name, runTime) {
