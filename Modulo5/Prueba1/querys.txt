@@ -1,0 +1,16 @@
+//1
+select * from libros where páginas >= 300;
+
+//2
+select * from autores where año_nacimiento >= 1970;
+
+//3
+select título, count(libros_isbn) from historial_prestamo h join libros l on h.libros_isbn = l.isbn  
+group by l.título
+having count(libros_isbn) = (select count(libros_isbn) maximo from historial_prestamo group by libros_isbn order by maximo desc limit 1);
+
+//4
+select concat(s.nombre,' ', s.apellido) as nombre_completo, (l.dias_prestamo - (h.fecha_devolucion - h.fecha_prestamo)) * 100 as total_debido
+from socios s join historial_prestamo h on s.rut = h.socios_rut
+join libros l on l.isbn = h.libros_isbn 
+where (l.dias_prestamo - (h.fecha_devolucion - h.fecha_prestamo)) > 0;

@@ -1,0 +1,58 @@
+// version generada por mysql
+
+
+CREATE TABLE IF NOT EXISTS Libros (
+  ISBN VARCHAR(15) NOT NULL,
+  Título VARCHAR(45) NOT NULL,
+  Páginas INT NOT NULL,
+  Dias_Prestamo INT NOT NULL,
+  PRIMARY KEY (ISBN));
+
+CREATE TABLE IF NOT EXISTS Socios (
+  Rut VARCHAR(12) NOT NULL,
+  Nombre VARCHAR(45) NOT NULL,
+  Apellido VARCHAR(45) NOT NULL,
+  Dirección VARCHAR(45) NOT NULL,
+  Telefono VARCHAR(15) NOT NULL,
+  PRIMARY KEY (Rut));
+
+CREATE TABLE IF NOT EXISTS Autores (
+  Id INT NOT NULL,
+  Nombre VARCHAR(45) NOT NULL,
+  Apellido VARCHAR(45) NOT NULL,
+  Año_nacimiento SMALLINT NOT NULL,
+  Año_muerte SMALLINT NULL,
+  PRIMARY KEY (Id));
+
+CREATE TABLE IF NOT EXISTS AutorLibro (
+  Libros_ISBN VARCHAR(15) NOT NULL,
+  Autores_Id INT NOT NULL,
+  Tipo_Autor VARCHAR(15) NOT NULL,
+  PRIMARY KEY (Libros_ISBN, Autores_Id),
+  CONSTRAINT fk_Libros_has_Autores_Libros
+    FOREIGN KEY (Libros_ISBN)
+    REFERENCES Libros (ISBN)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT fk_Libros_has_Autores_Autores1
+    FOREIGN KEY (Autores_Id)
+    REFERENCES Autores (Id)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+
+CREATE TABLE IF NOT EXISTS Historial_prestamo (
+  Libros_ISBN VARCHAR(15) NOT NULL,
+  Socios_Rut VARCHAR(12) NOT NULL,
+  Fecha_prestamo DATE NULL,
+  Fecha_devolucion DATE NULL,
+  PRIMARY KEY (Libros_ISBN, Socios_Rut),
+  CONSTRAINT fk_Libros_has_Socios_Libros1
+    FOREIGN KEY (Libros_ISBN)
+    REFERENCES Libros (ISBN)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT fk_Libros_has_Socios_Socios1
+    FOREIGN KEY (Socios_Rut)
+    REFERENCES Socios (Rut)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);

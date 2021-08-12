@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/IgnacioDonosoS/TdJs#readme",
   "dependencies": {
+    "axios": "^0.21.1",
     "core-js": "^3.13.1",
     "esm": "^3.2.25"
   },

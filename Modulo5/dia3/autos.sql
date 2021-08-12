@@ -1,0 +1,12 @@
+select marca as pepe from autos;
+insert into ventas(fecha, id_auto, cliente, referencia, cantidad) values ('2021-05-04', 1, 'Juanito', 1, 2);
+insert into ventas(fecha, id_auto, cliente, referencia, cantidad) values ('2021-04-04', 2, 'Juanita', 2, 3);
+select sum(cantidad) from ventas;
+ALTER TABLE ventas ADD precio int;
+insert into autos (id, marca, modelo, año, color) values (5, 'Nissan', 'v16', '1992', 'negro');
+update autos color = 'amarillo' where id = 5;
+select count(*) from autos group by año;
+select * from ventas order by fecha asc;
+CREATE INDEX indice_marca on autos(marca);
+CREATE INDEX indice_fecha on ventas(fecha);
+drop index indice_marca;
