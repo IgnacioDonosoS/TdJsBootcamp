@@ -4,7 +4,7 @@ const fs = require("fs");
 
 http
   .createServer(function (req, res) {
-    res.writeHead(200, { "Content-Type": "text/html; charset=UTF-8" });
+    res.writeHead(200, { 'Content-Type': 'text/html' })
     const params = url.parse(req.url, true).query;
     const archivo = params.archivo;
     const contenido = params.contenido;

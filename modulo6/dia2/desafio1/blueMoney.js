@@ -1,4 +1,3 @@
-const https = require("https");
 const fs = require("fs");
 const axios = require("axios");
 const [archivo, indicador, cantidad] = process.argv.slice(2);
@@ -11,6 +10,7 @@ axios.get('https://mindicador.cl/api')
     if (tipoDato == "Pesos") {cantidadTotal = cantidad/valorCambio};
     if (tipoDato == "Dólar") {cantidadTotal = (cantidad/valorCambio)/misDatos.dolar.valor};
     let fecha = new Date();
+
 fs.writeFile(
   `${archivo}`,
   `A la fecha: ${fecha}

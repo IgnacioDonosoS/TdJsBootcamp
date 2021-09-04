@@ -1,0 +1,4 @@
+To:  josda.gallardo@gmail.com, Subject: prueba live, Body: <p>prueba</p><br> El valor del Dolar del dia de hoy es: 789.98 <br> 
+      El valor del Euro del dia de hoy es: 922.44 <br> 
+      El valor de la Uf del dia de hoy es: 29858.23 <br> 
+      El valor de la Utm del dia de hoy es: 52213 <br>
