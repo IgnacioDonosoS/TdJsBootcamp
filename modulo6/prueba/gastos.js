@@ -10,7 +10,6 @@ fs.writeFileSync("gastos.json", JSON.stringify(gastosJson))
 const recalcularDeudas = () => {
     const roommatesArr = JSON.parse(fs.readFileSync("roommates.json", "utf8"))
     const gastosArr = JSON.parse(fs.readFileSync("gastos.json", "utf8"))
-    // Seteo todos los valores a 0
     let roommates = roommatesArr.roommates
     let gastos = gastosArr.gastos
     roommates = roommates.map((item) => {
